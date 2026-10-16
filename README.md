@@ -29,4 +29,4 @@ Indexes are created idempotently at startup. Real environment variables take pri
 - Tested against MongoDB 7.0 with the sample data, a randomized dataset checked against a plain-Python reference
   implementation (ties, no-log employees, weekends, mid-month joiners, overnight shifts), parallel-request race tests,
   and a 100k-record dataset where every `/admin/explain/*` plan uses `IXSCAN` with no `COLLSCAN`.
-- Nothing is missing from the contract as far as I know.
+  
